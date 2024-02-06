@@ -1,0 +1,24 @@
+{% load static %}
+{% load menu_extras %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{% static 'CSS/bootstrap.min.css' %}">
+    {% load menu_extras %}
+</head>
+<body style="background-color: aliceblue">
+    <div class="container">
+        <h1 align="center">test menu</h1>
+        <div align="center">
+                        {% draw_menu 'test_category' %}
+            <br>
+            <br>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
